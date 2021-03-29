@@ -58,7 +58,7 @@ class ChocolateFeast(object):
             if value >= 0:
                 self._cash = value
             else:
-                raise ValueError("cash must be greater than 0")
+                raise ValueError("cash must be greater than or equal to 0")
         else:
             raise TypeError("cash must be an integer")
 
@@ -73,7 +73,7 @@ class ChocolateFeast(object):
             if value >= 0:
                 self._price = value
             else:
-                raise ValueError("price must be greater than 0")
+                raise ValueError("price must be greater than or equal to 0")
         else:
             raise TypeError("price must be an integer")
 
@@ -88,7 +88,7 @@ class ChocolateFeast(object):
             if value >= 0:
                 self._wrappers_needed = value
             else:
-                raise ValueError("wrappers must be greater than 0")
+                raise ValueError("wrappers must be greater than or equal to 0")
         else:
             raise TypeError("wrappers must be an integer")
 
